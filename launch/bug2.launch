@@ -1,0 +1,8 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab6)/world/playground.world" />
+	<node pkg="lab6" type="bug2.py" name="bug2" output="screen">
+		<param name="x" value="4.5"/>
+		<param name="y" value="9.0"/>
+	</node>
+</launch>
